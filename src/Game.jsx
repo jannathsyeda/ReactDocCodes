@@ -6,6 +6,7 @@ import RecipiesList from "./RecipiesList";
 import Poem from "./Poem";
 import ClockContainer from "./ClockContainer";
 import RenderTree from "./RenderTree";
+import TaskManager from "./Task";
 
 export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -75,6 +76,8 @@ export default function Game() {
         <h1>render tree  section</h1>
       <RenderTree/>
       </div>
+      -------------------------------------------task-------------
+      <TaskManager/>
     </div>
   );
 }
